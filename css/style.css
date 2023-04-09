@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.logo{
+    position:absolute;
+    top:-40px;
+    left:-30px;
+    bottom: 10px;
+    float:left;
+    height: 15%;
+    margin: 15px;
+}
+*header{
+    border-bottom: 1px solid #4F4F4F;
+}
+.nav ul{
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    border-bottom: 1px solid #4F4F4F;
+}
+.nav li{
+    text-align: right;
+    display: inline-block;
+}
+.nav a{
+    text-align: right;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: #7E7C73;
+}
+.nav{
+    text-align:left;
+    font-size: 1.1em;
+    font-weight:lighter;
+}
+.learn{
+    background-size:cover;
+}
+
+.code{
+    background-image: url("/image/blue\ design.jpg");
+    color:#E8E8E8;
+    background-size: cover;
+    background-blend-mode:multiply;
+    text-align: center;
+    font-weight: bold;
+}
+.code a{
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+.newnav{
+    text-align: center;
+}
+.social ul{
+    align-items: center;
+    display: inline;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    border-bottom: 1px solid #4F4F4F;
+  }
+.Intemation{
+    background-color: #BABABA;
+    background-color: bisque;
+    background-blend-mode: multiply;
+    border-left: #BABABA;
+    border-right: #BABABA;
+}
+.journey{
+    font-weight: lighter;
+    justify-content: center;
+    font-size: large;
+}
+#myimg{
+    align-items:center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin:15px;
+    border-radius: 49%;
+}
+.joinus{
+    background-color: antiquewhite;
+}
+.joinus ul{
+    background-color: antiquewhite;
+    align-items: center;
+    display: inline;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-style: italic;
+    
+}
