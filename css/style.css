@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 .logo{
-    float: left;
-  /* width: 100px;
-  height: 100px; */
-  /* background: #555; */
+     position:absolute;
+    top:-40px;
+    left:-30px;
+    bottom: 10px;
+    float:left;
+    height: 15%;
+    margin: 15px;
 }
 *header{
     border-bottom: 1px solid #4F4F4F;
