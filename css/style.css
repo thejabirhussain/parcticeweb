@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 *{
-    margin:0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 .logo{
-    position:absolute;
-    top:-40px;
-    left:-30px;
-    bottom: 10px;
-    float:left;
-    height: 15%;
-    margin: 15px;
+    float: left;
+  /* width: 100px;
+  height: 100px; */
+  /* background: #555; */
 }
 *header{
     border-bottom: 1px solid #4F4F4F;
 }
+.nav{
+    text-align: left;
+}
 .nav ul{
+    position: relative;
+    top: 18px;
+    left: 15%;
     text-align: center;
     margin: 0;
     padding: 0.5em;
-    border-bottom: 1px solid #4F4F4F;
+    /* border-bottom: 1px solid #4F4F4F; */
 }
 .nav li{
     text-align: right;
@@ -42,12 +43,22 @@
     font-size: 1.1em;
     font-weight:lighter;
 }
-.learn{
-    background-size:cover;
+.nav1{
+    text-align: center;
+    display: inline-block;
+    padding: .5em;
+    color: black;
+    text-decoration: none;
 }
-
+.nav1 li{
+    text-align: right;
+    display: inline-block;
+}
+.nav1 a:hover{
+    background-color: #7E7C73;
+}
 .code{
-    background-image: url("image/blue\ design.jpg");
+    background-image: url("/image/blue\ design.jpg");
     color:#E8E8E8;
     background-size: cover;
     background-blend-mode:multiply;
@@ -65,9 +76,9 @@
 .social ul{
     align-items: center;
     display: inline;
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    list-style:none;
+    display:flex;
+    justify-content: center; 
     gap: 2.5rem;
     border-bottom: 1px solid #4F4F4F;
   }
@@ -105,3 +116,9 @@
     font-style: italic;
     
 }
+.program{
+    height: fit-content;
+}
+@media screen and (max-width: 800px) {
+    .sizediv, .nav, .social,.numbers {
+      width: 100%; }}
