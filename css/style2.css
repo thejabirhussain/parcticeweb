@@ -5,8 +5,12 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+.logo{
+    align-items: center;
+    right:auto;
+}
 .signup{
-    background-color: aqua;
+    background-color: bisque;
     font-weight: lighter;
     font-size: large;
     font-style: italic;
