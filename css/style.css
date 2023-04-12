@@ -4,13 +4,7 @@
     box-sizing: border-box;
 }
 .logo{
-     position:absolute;
-    top:-40px;
-    left:-30px;
-    bottom: 10px;
-    float:left;
-    height: 15%;
-    margin: 15px;
+   
 }
 *header{
     border-bottom: 1px solid #4F4F4F;
@@ -61,7 +55,7 @@
     background-color: #7E7C73;
 }
 .code{
-    background-image: url("image/blue design.jpg");
+    background-image: url('image/blue design.jpg');
     color:#E8E8E8;
     background-size: cover;
     background-blend-mode:multiply;
@@ -125,3 +119,17 @@
 @media screen and (max-width: 800px) {
     .sizediv, .nav, .social,.numbers {
       width: 100%; }}
+.bell{
+    font-weight: bold;
+    font-style: italic;
+    padding: 1.1em;
+    font-family: "Lato";
+}
+.button {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: .5em;
+    text-decoration: none;
+    border-bottom: 1px solid #4F4F4F;
+    }
