@@ -1,26 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-.logo{
-    align-items: center;
-    right:auto;
-}
-.signup{
+/* Add this code at the end of your CSS */
+.header {
+    border-bottom: 1px solid #4F4F4F;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .signup {
     background-color: bisque;
     font-weight: lighter;
     font-size: large;
     font-style: italic;
     margin: auto;
     padding: auto;
-
-}
-.signup input:hover{
+    max-width: 600px; /* Adjust the max-width according to your design */
+    width: 90%; /* Adjust the width according to your design */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .signup input:hover {
     background-color: aquamarine;
-}
-.signup submit{
-    background-color: black;
-}
+  }
+  
+  .signup input[type="submit"] {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+  /* Additional CSS for responsiveness */
+  @media screen and (max-width: 600px) {
+    /* Adjust the max-width according to your design */
+    .signup {
+      font-size: medium;
+    }
+  }
+  
