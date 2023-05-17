@@ -4,82 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>colne</title>
+    <title>QuanTum Studio's</title>
     <link rel="stylesheet" href ="css/style.css">
 </head>
 <body>
-    <header class="header" style="border-bottom: 1px solid #4F4F4F;" >
+    <header class="header" >
         <div class="nav">
-        <img class="logo" src="image/My project-1.png" alt="Logo" style="max-width: 100%;height: auto;" align="center">
-        <ul style="position: relative;">
-            <li>
-        <a href="index.html">Home</a>
-            </li>
-            <li>
-        <a href="course.html">Courses</a>
-            </li>
-            <li>
-        <a href="signin.html">Sign in</a>
-        </li>
-        </ul>
-        </div>
+            <a href="index.html">
+              <ul><h3>Imaginary Hub</h3></ul>
+            </a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="signin.html">Sign in</a></li>
+            </ul>
+          </div>          
         <br>
     </header>
     <br>
     <br>
         <section class="Intro">
-            <div class="learn" align="center">
-                <img src="gif1/searching boy.gif" alt="learn" class="program" style="max-width:100%;height:auto;">
-            </div>  
-            <div class="code" align="center">             
-                <div>
-                <h1 class="learn">
-                    ->Want to learn
-                </h1>
-            </div>
+            <div class="learn">
+                <img src="gif/searching boy.gif" alt="learn" class="program">
+                <div class="content">
+                  <h1>->Want to learn</h1>
+                  <br>
+                  <h2><span class="auto-type" style="font-weight: bolder; color: black;"></span></h2>
+                  <br>
+                  <h2>->we make Your learning Journey special</h2><br>
+                 <ul> <a href="signin.html">->Sign in</a><br></ui>
+                </div>
+              </div>              
             <br>
-            <div>
-                <h1>
-                    <span class="auto-type" style="font-weight: bolder; color: #FFA500;"></span>
-                </h1>
-            </div>
-            <br>
-            <div>
-                <h3>
-                    ->we make Your learning Journey special
-                </h3>
-            </div>
-            <br>
-            <nav class="nav1"><UL><li>
-                <a href="signin.html">->Sign in</a>
-            </ul></li></nav>
-            </div>
             <br>
         </section>
         <br>
         <section class="numbers">
-            <div height="50" width="25">
-            <div align="center"><h2>We teach coding in a simple way</h2></div><br>
-            <nav class="social" style="max-width:100%;height:auto;">
-            <ul>
-             <li id="1">   
-            <img src="image/people.png" alt="learing students" style="width: 30%;height: auto;">
-            <p>6000+ students</p>
-             </li>
-             <br>
-             <li id="2">
-            <img src="image/dc0066dbc887f7c7f98e5e83f08c0c7b.png" alt="connections" style="width: 30%;height: auto;">
-            <p>Industry Connections</p>
-            </li>
-            <br>
-            <li id="3">
-            <img src="image/help.png" alt="value" style="width: 30%;height: auto;">
-            <p>2000+ active users</p>
-            </li>
-            <br>
-            </ul>
-            </nav>
-            </div>
+            <div class="container">
+                <div align="center">
+                  <h2>We teach coding in a simple way</h2>
+                </div>
+                <br>
+                <nav class="social">
+                  <ul>
+                    <li id="1">
+                      <div class="item">
+                        <img src="image/people.png" alt="learning students">
+                        <p data-count="6000">0+</p>
+                        <i><b>Learning Students</b></i>
+                      </div>
+                    </li>
+                    <li id="2">
+                      <div class="item">
+                        <img src="image/dc0066dbc887f7c7f98e5e83f08c0c7b.png" alt="connections">
+                        <p data-count="100">0</p>
+                        <i><b>Industry Connections</b></i>
+                      </div>
+                    </li>
+                    <li id="3">
+                      <div class="item">
+                        <img src="image/help.png" alt="value">
+                        <p data-count="2000">0</p>
+                        <i><b>Active Users</b></i>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>              
         </section>
         <br>
         <br>
@@ -135,10 +126,55 @@
         })
         var typed=new Typed(".auto-type1",{
             strings:["#Youtube","#Instagram","#Telegram"],
-            typedSpeed: 50,
-            backSpeed: 50,
+            typedSpeed: 100,
+            backSpeed: 100,
             loop: true
         })
+  function startCounting() {
+    const counters = document.querySelectorAll('.item p');
+    const speed = 10000; // Adjust the speed of counting (lower value = faster)
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const handleIntersect = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const countTo = parseInt(target.dataset.count, 10);
+
+          let currentCount = 0;
+          const increment = Math.ceil(countTo / (speed / 16));
+
+          const updateCount = () => {
+            currentCount += increment;
+
+            if (currentCount >= countTo) {
+              target.textContent = countTo.toLocaleString();
+            } else {
+              target.textContent = currentCount.toLocaleString();
+              requestAnimationFrame(updateCount);
+            }
+          };
+
+          updateCount();
+          observer.unobserve(target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, options);
+
+    counters.forEach((counter) => {
+      observer.observe(counter);
+    });
+  }
+
+  // Start counting when the DOM content is loaded
+  document.addEventListener('DOMContentLoaded', startCounting);
     </script>
 </body>
 </html>
