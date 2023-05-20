@@ -63,7 +63,7 @@
   }
 
 .code {
-  background-image: url('/image/blue design.jpg');
+  background-image: url('image/blue design.jpg');
   color: #E8E8E8;
   background-size: cover;
   background-blend-mode: multiply;
