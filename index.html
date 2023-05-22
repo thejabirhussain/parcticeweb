@@ -13,11 +13,21 @@
             <a href="index.html">
               <ul><h3>Imaginary Hub</h3></ul>
             </a>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="course.html">Courses</a></li>
-              <li><a href="signin.html">Sign in</a></li>
-            </ul>
+            <nav class="navbar">
+              <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <div class="menu-overlay">
+                <div class="close-button">&times;</div>
+                <ul class="overlay-menu">
+                  <li><a href="index.html" >Home</a></li><br>
+                  <li><a href="course.html" >Courses</a></li><br>
+                  <li><a href="signin.html" >Sign in</a></li><br>
+                </ul>
+              </div>
+            </nav>               
           </div>          
         <br>
     </header>
@@ -25,7 +35,7 @@
     <br>
         <section class="Intro">
             <div class="learn">
-                <img src="gif1/searching boy.gif" alt="learn" class="program">
+                <img src="gif/searching boy.gif" alt="learn" class="program">
                 <div class="content">
                   <h1>->Want to learn</h1>
                   <br>
@@ -109,6 +119,46 @@
         </ul>
             </div>
         </section>
+        <br>
+        <div class="container">
+          <div class="section">
+            <div class="section-title">Imaginary Hub</div>
+            <div class="section-content">
+              <p>Welcome to Imaginary Hub! We are a creative space dedicated to exploring new ideas and sparking imagination. Join us on a journey of endless possibilities.</p>
+            </div>
+          </div>
+      
+          <div class="section">
+            <div class="section-title">Contact Us</div>
+            <div class="section-content">
+              <p>> Feel free to reach out to us for any inquiries or feedback. We'd love to hear from you!</p>
+              <p>> Email: thejabirhussain@gmail.com</p>
+              <p>> Phone: 123-456-7890</p>
+            </div>
+          </div>
+      
+          <div class="section">
+            <div class="section-title">Helpful Links</div>
+            <div class="section-content">
+              <ul>
+                <li><a href="refund.html">> Refund & cancelation Policy</a></li>
+                <li><a href="terms.html">> Terms of Service</a></li>
+                <li><a href="Privacy.html">> Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="section">
+            <div class="section-title">Connect with Us</div>
+            <div class="section-content">
+              <ul>
+                <li><a href="#">> youtube</a></li>
+                <li><a href="#">> Instagram</a></li>
+                <li><a href="#">> Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
     <br>
     <br>
     <footer>
@@ -132,7 +182,7 @@
         })
   function startCounting() {
     const counters = document.querySelectorAll('.item p');
-    const speed = 10000; // Adjust the speed of counting (lower value = faster)
+    const speed = 15000; // Adjust the speed of counting (lower value = faster)
 
     const options = {
       root: null,
@@ -174,7 +224,22 @@
   }
 
   // Start counting when the DOM content is loaded
+ 
   document.addEventListener('DOMContentLoaded', startCounting);
-    </script>
+  function myFunction(x) {
+  x.classList.toggle("change");
+}
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
+const closeButton = document.querySelector('.close-button');
+
+hamburgerMenu.addEventListener('click', function () {
+  menuOverlay.classList.add('active');
+});
+
+closeButton.addEventListener('click', function () {
+  menuOverlay.classList.remove('active');
+});
+ </script>
 </body>
 </html>
