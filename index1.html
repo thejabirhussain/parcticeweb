@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Studio's</title>
-    <link rel="stylesheet" href ="css/style3.css">
+    <link rel="stylesheet" href="css/style3.css?v=2">
 </head>
 <body>
-    <header class="header" >
-        <div class="nav">
-            <a href="index.html">
-              <ul><h3>Imaginary Hub</h3></ul>
-            </a>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="mycourse.html">My Courses</a></li>
-              <li><a href="index.html">Sign out</a></li>
+  <header class="header" >
+    <div class="nav">
+        <a href="index.html">
+          <ul><h3>Imaginary Hub</h3></ul>
+        </a>
+        <nav class="navbar">
+          <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="menu-overlay">
+            <div class="close-button">&times;</div>
+            <ul class="overlay-menu">
+              <li><a href="index.html" >Home</a></li><br>
+              <li><a href="mycourse.html" >Courses</a></li><br>
             </ul>
-          </div>          
-        <br>
-    </header>
+          </div>
+        </nav>               
+      </div>          
+    <br>
+</header>
     <br>
     <br>
         <section class="Intro">
@@ -186,6 +195,18 @@
 
   // Start counting when the DOM content is loaded
   document.addEventListener('DOMContentLoaded', startCounting);
+
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
+const closeButton = document.querySelector('.close-button');
+
+hamburgerMenu.addEventListener('click', function () {
+  menuOverlay.classList.add('active');
+});
+
+closeButton.addEventListener('click', function () {
+  menuOverlay.classList.remove('active');
+});
     </script>
 </body>
 </html>
