@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header" style="border-bottom: 1px solid #4F4F4F;" >
+    <header class="header" >
         <div class="nav">
-        <img class="logo" src="image/My project-1.png" alt="Logo" style="max-width: 100%;height: auto;" align="center">
-        <ul style="position: relative;">
-            <li>
-        <a href="index1.html">Home</a>
-            </li>
-            <li>
-        <a href="index.html">Sign out</a>
-        </li>
-        </ul>
-        </div>
+            <a href="index.html">
+              <ul><h3>Imaginary Hub</h3></ul>
+            </a>
+            <nav class="navbar">
+              <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+              <div class="menu-overlay">
+                <div class="close-button">&times;</div>
+                <ul class="overlay-menu">
+                  <li><a href="index.html" >Home</a></li><br>
+                  <li><a href="mycourse.html" >Courses</a></li><br>
+                </ul>
+              </div>
+            </nav>               
+          </div>          
         <br>
     </header>
     <br>
@@ -32,7 +40,7 @@
             <br>
             <div>
                 <div class="course image" align="center">
-                    <img src="image/course image.jpg" alt="Course image" style="max-width: 100%;height: auto;"">
+                    <img src="/image/course image.jpg" alt="Course image" style="max-width: 100%;height: auto;"">
                 </div>
                 <h2 align="center" class="bell" >Bellman Ford Batch</h2>
                 <div align="center">
@@ -40,13 +48,25 @@
                 </div>
                 <br>
                 <div align="center" class="button">
-                    <a href="start.html"><span style="font-style: italic; color: black;">START!</span></a>
+                    <a href="/start.html"><span style="font-style: italic; color: black;">START!</span></a>
                 </div>
             </div>
         </div>
     </section>
     <br><br>
     <footer><p align="center"><i>Copy Right 2023</i></p></footer><br><br>
-    
+    <script>
+         const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuOverlay = document.querySelector('.menu-overlay');
+const closeButton = document.querySelector('.close-button');
+
+hamburgerMenu.addEventListener('click', function () {
+  menuOverlay.classList.add('active');
+});
+
+closeButton.addEventListener('click', function () {
+  menuOverlay.classList.remove('active');
+});
+    </script>
 </body>
 </html>
