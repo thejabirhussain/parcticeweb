@@ -61,76 +61,7 @@
   .nav ul li a:hover {
     background-color: #7E7C73; /* Change background color on hover */
   }
-  /* Add the following CSS code to style3.css */
-
-/* Rest of your existing CSS styles */
-
-/* Overlay Menu */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.menu-overlay.active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.close-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.overlay-menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-
-.overlay-menu li {
-  margin-bottom: 20px;
-}
-
-.overlay-menu li a {
-  font-size: 24px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.overlay-menu li a:hover {
-  color: black;
-}
-
-/* Add the following CSS to pause the video when the menu is active */
-.menu-overlay.active + .Intro .learn video {
-  display: none;
-}
-
-/* Add the following CSS to vertically center the menu options */
-.menu-overlay.active + .Intro .code {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-/* Default styling */
+ /* Default styling */
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -213,7 +144,7 @@
 
   .menu-overlay .close-button {
     display: block;
-    color: white;
+    color: black;
     position: absolute;
     top: 30%;
     right: 25%;
@@ -224,6 +155,7 @@
     cursor: pointer;
   }
 }
+
   
 .code {
   background-image: url("/image/blue design.jpg");
