@@ -6,6 +6,12 @@ a{
     text-decoration: none;
     color: black;
 }
+@media screen and (max-width: 767px) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
 .content h1 {
     color: #4F4F4F;
     font-style: italic;
@@ -91,7 +97,7 @@ span{
     width: 100%;
     height: auto;
   }
-  .img-fluid{
+  .roadimg{
     max-width: 100%;
     height: auto;
   }
@@ -101,6 +107,7 @@ details{
 }
 
 summary {
+  font-weight: 300;
   padding: .5em 1rem;
   list-style: none;
   display: flex;
