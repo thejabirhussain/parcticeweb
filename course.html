@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quantum Studio's</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="/css/style3.css" rel="stylesheet"/>
+  <link href="css/style3.css" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/b52e2e4043.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-light.bg border-bottom" style="background-color: bisque;" >
+  <nav class="navbar navbar-expand-lg bg-light.bg border-bottom" >
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Imaginary Hub</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,12 +18,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Home( af signin).html">Home</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="course.html">Quanta Course</a></li>
+              <li><a class="dropdown-item" href="/index1.html">Quanta Course</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -31,13 +31,13 @@
               Resources
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="notes.html">Notes</a></li>
+              <li><a class="dropdown-item" href="/notes.html">Notes</a></li>
               <li><a class="dropdown-item" href="#">College Review</a></li>
             </ul>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Logout  <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+          </li> 
         </ul>
       </div>
     </div>
@@ -54,11 +54,11 @@
             <h2><span class="auto-type" style="font-weight:lighter; color: black;"></span></h2>
             <br>
             <h2>->we make Your learning Journey special</h2><br>
-            <button type="button" class="btn btn-primary" href="course.html">Join now  <i class="fa-solid fa-angles-right"></i>  </button>
+            <a href="#"><button type="button" class="btn btn-primary" >Join now  <i class="fa-solid fa-angles-right"></i>  </button></a>
           </div>
         </div>
         <div class="col-md">
-            <br><video src="video/Intro Course-1.mp4"  controls autoplay>Intro</video>
+            <br><video class="col" src="video/Intro Course-1.mp4"  controls>Intro</video>
         </div>
       </div>
     </div>
@@ -76,18 +76,19 @@
       <h3>Early Bird Offer </h3><br>
       <h3><strong >Join Quanta Course</strong><h3></h3><br>
       <strong>Starts on 1st of Novemeber</strong><br><br>
-      <button type="button" class="btn btn-primary" href="#">Join Now  <i class="fa-solid fa-angles-right"></i>  </button> <br><br>
+      <a href="#"><button type="button" class="btn btn-primary" >Join Now  <i class="fa-solid fa-angles-right"></i>  </button></a> <br><br>
   </div>
   <div class="container text-center">
-    <div class="row align-items-center">
+    <div class="row align-items-center" style="padding: 2% 0;
+    margin: 1% 0;">
       <div class="col">
         <h3>What You Will Learn?</h3>
-        <blockquote class="blockquote"><br>
+        <blockquote ><br>
           <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  Complete Java.</p>
           <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  Complete Data Structures and Alogorithms.</p>
           <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  Live Resume Preaparation.</p>
           <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  Live interview Preaparion and Mentorship sessions.</p>
-          <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  300+ Practice Questions on all Important Topics.</p>
+          <p><i class="fa-solid fa-check" style="color: #ff8b3d;"></i>  300+ Practice Questions on all Important Topics(Asked by Top Companies).</p>
         </blockquote>
       </div>
       <div class="col">
@@ -173,15 +174,16 @@
   <br>
   <div class="roadmap">
   <div align="center">
-    <img src="image/Roadmap.png" class="img-fluid" alt="roadmap" style="max-width: 50%; height: auto;">
-    <img src="image/Roadmap 2.png" class="img-fluid" alt="roadmap" style="max-width: 50%; height: auto; position: relative;
+    <img src="image/Roadmap.png" class="roadimg" alt="roadmap" style="max-width: 50%; height: auto;">
+    <img src="image/Roadmap 2.png" class="roadimg" alt="roadmap" style="max-width: 50%; height: auto; position: relative;
     right: 2.27%;">
   </div>
   </div>
   <div align="center" class="taught" id="instructor">
     <img id="myimg" src="image/Black Red and White Formal LinkedIn Profile Picture adobe.png" alt="image" height="250">
     <strong style="color: rgb(102, 116, 204); font-weight: bold; font-size: larger;" >Taught By</strong><br>
-    <h3 style="font-weight:400;">Jabir Hussain</h3><br>
+    <h3 style="font-weight: 400;
+    line-height: 1.55;">Jabir Hussain</h3><br>
   </div>
   <div class="faq" align="left" id="faq">
     <div align="center"><h3>Frequently Asked Questions</h3></div>
@@ -242,7 +244,7 @@
       </li>
       <li class="list-group-item">
         <details>
-          <summary>What are Data Structures and Algorithms(DSA)? </summary>
+          <summary >What are Data Structures and Algorithms(DSA)? </summary>
           <div style="background-color: bisque;">
             <p style="font-weight: 300;">These are tools & techniques that will help us write good code.
               A data structures is a named location that can be used to store and organize data.
@@ -295,7 +297,8 @@
     </ul>
 </div>
 <br>
-<div class="container text-center" >
+<div class="container text-center" style="margin: 1%;
+padding: 4em 2%;" >
   <div class="row align-items-start">
     <div class="col">
       <h3><i>Imaginary</i> Hub</h3>
